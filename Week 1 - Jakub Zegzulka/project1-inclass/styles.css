@@ -1,0 +1,45 @@
+.product-container {
+  text-align: center;
+}
+
+.product-image {
+  width: 50%;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+h1 {
+  animation: slideIn 2s;
+}
+
+@keyframes slideIn {
+  from {transform: translateX(-100%);}
+  to {transform: translateX(0);}
+}
+
+ul {
+  animation: rotateIn 2s;
+}
+
+@keyframes rotateIn {
+  from {transform: rotate(90deg);}
+  to {transform: rotate(0);}
+}
+
+.cta-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  animation: pulse 2s;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
