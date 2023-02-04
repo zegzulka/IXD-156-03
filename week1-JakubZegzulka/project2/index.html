@@ -23,9 +23,10 @@
     </section>
 
     <main class="flex flex-col w-full gap-[24px]">
-        <input id="input" class="w-full p-[24px] bg-[#000000] border-2 border-[#333333] rounded-[16px] text-[#ffffff] p-[24px] flex focus:border-[#818181] focus:outline-none" type="text" autofocus>        <div class="flex gap-[24px] w-full">
-            <button class="w-full h-[64px] bg-[#FFFF3C] border-2 border-[#A0A01F] rounded-[16px] tracking-wide uppercase leading-[19px]" id="encryptButton" py-click="getEncryptedMessage()" type="submit">Encrypt</button>
-            <button class="w-full h-[64px] bg-[#CFCFCF] border-2 border-[#8F8F8F] rounded-[16px] tracking-wide uppercase leading-[19px]" id="decryptButton" py-click="getDecryptedMessage()" type="submit">Decrypt</button>
+        <input id="input" class="w-full p-[24px] bg-[#000000] border-none border-2 border-[#333333] rounded-[16px] text-[#ffffff] text-[14px] focus:border-[#818181] focus:outline-none" type="text" autofocus>
+        <div class="flex gap-[24px] w-full">
+            <button class="w-full h-[64px] bg-[#FFFF3C] border-2 border-[#A0A01F] rounded-[16px] tracking-wide uppercase leading-[19px] text-[14px]" id="encryptButton" py-click="getEncryptedMessage()" type="submit">Encrypt</button>
+            <button class="w-full h-[64px] bg-[#CFCFCF] border-2 border-[#8F8F8F] rounded-[16px] tracking-wide uppercase leading-[19px] text-[14px]" id="decryptButton" py-click="getDecryptedMessage()" type="submit">Decrypt</button>
         </div>
 
         <div id="log-list" class="flex flex-col gap-[24px]">
