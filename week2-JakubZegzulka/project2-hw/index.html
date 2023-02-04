@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prototyping 2: Week 2: HW</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+    <main class="">
+        <div class="w-full absolute bottom-0">
+            <div id="filterLayer" class="h-full w-full absolute opacity-25 z-10 holder"></div>
+            <video id="video" autoplay class="w-full"></video>
+            <div class="absolute bottom-0 z-20 w-full flex justify-center">
+                <div class="flex flex-col justify-center gap-[8px]">
+                    <div class="">
+                        <p id="filterName" class="text-center w-full"></p>
+                    </div>
+                    <div class="mb-[24px] gap-[16px] w-fit">
+                        <button class="btn" id="0">1</button>
+                        <button class="btn" id="1">2</button>
+                        <button class="btn" id="2">3</button>
+                        <button class="btn" id="3">4</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="camera.js"></script>
+        <script src="manager.js"></script>
+    </main>
+</body>

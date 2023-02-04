@@ -38,7 +38,7 @@ encryptedLetters = {
 
 logs = []
 
-def showResult(function):
+def showResult(function, input):
     currentTime = date.now()
     hourMinute = currentTime.strftime("%H:%M:%S")
     global wordsInput
@@ -51,7 +51,7 @@ def showResult(function):
         "id": logID,
         "content": function,
         "time": hourMinute,
-        "input": wordsInput
+        "input": input
     }
 
     logs.append(outcome)    
@@ -62,6 +62,7 @@ def showResult(function):
     logInputHTML = logHTML.select(".input")
     logOutcomeHTML.element.innerText = outcome["content"]
     logTimeHTML.element.innerText = outcome["time"]
+    logInputHTML.element.innerText = outcome["input"]
     logList.element.insertBefore(logHTML.element, logList.element.firstChild)
 
     print(function)
@@ -88,7 +89,7 @@ def getEncryptedMessage():
          else:
             return encryptedWord
          
-    showResult(encryptedResult())
+    showResult(encryptedResult(), words)
 
 
 def getDecryptedMessage():   
@@ -111,4 +112,4 @@ def getDecryptedMessage():
         else:
             return decryptedWord
 
-    showResult(decryptedResult())
+    showResult(decryptedResult(), codeInput)
