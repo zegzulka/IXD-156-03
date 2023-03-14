@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prototyping 2: Week 2: Project 1</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#242625]">
+    <div class="relative">
+        <div class="absolute inset-0 h-screen flex justify-center items-center">
+            <div class="flex flex-col w-[480px] gap-[24px]">
+                <div class="bg-[#131414] py-[28px] px-[28px] flex space-between rounded-[8px] shadow-inner">
+                    <div class="w-1/3 flex flex-col">
+                        <p id="userChoice" class="text-[18px] text-[#B8B9B9]">—</p>
+                        <p class="text-white text-[12px] text-[#A1A1A1] font-light">You</p>
+                    </div>
+                    <div class="w-1/3 flex items-center justify-center">
+                        <p class="text-center text-[#ffffff] text-[24px] text-bold" id="result">Let’s Play</p>
+                    </div>
+                    <div class="w-1/3 flex justify-end">
+                        <div class="w-fit flex-col flex justify-center">
+                            <p id="computerChoice" class="text-[18px] inline text-[#B8B9B9]">—</p>
+                            <p class="text-white text-[12px] text-[#A1A1A1] font-light inline w-fit">Comp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex align-middle gap-[24px]">
+                    <button id="Scissors" class="ease-in duration-200 w-1/3 startButton rounded-[8px] bg-[#3C403E] border-[0.2px] border-[#555656] p-4 text-[#E2E2E2] font-light hover:text-[#FFFFFF] hover:border-[#AFAFAF] hover:shadow-none active:border-[#3D3D3D] active:text-[#848484]">Scissors</button>
+                    <button id="Paper" class="ease-in duration-200 w-1/3 startButton rounded-[8px] bg-[#3C403E] border-[0.2px] border-[#555656] p-4 text-[#E2E2E2] font-light hover:text-[#FFFFFF] hover:border-[#AFAFAF] hover:shadow-none active:border-[#3D3D3D] active:text-[#848484]">Paper</button>
+                    <button id="Rock" class="ease-in duration-200 w-1/3 startButton rounded-[8px] bg-[#3C403E] border-[0.2px] border-[#555656] p-4 text-[#E2E2E2] font-light hover:text-[#FFFFFF] hover:border-[#AFAFAF] hover:shadow-none active:border-[#3D3D3D] active:text-[#848484]">Rock</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex space-between w-full py-[24px] px-[24px]">
+            <div class="flex flex-col w-full">
+                <h3 class="text-[14px] font-medium text-[#A7A8A8]">Rock, Paper, Scissors</h3>
+                <p class="text-[11px] text-[#7C7D7C]">By JZ</p>
+            </div>
+            <div class="flex flex-col">
+                <button class="px-[26px] py-[14px] bg-[#DA673C] rounded-[8px] text-white border-[0.2px] border-[#D9A795] drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)]">Support</button>
+            </div>
+        </div>
+    <script src="system.js"></script>
+</body>
